@@ -2,8 +2,18 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Contato</title>
+  <title>Produção e Edição de Vídeos Personalizada | Shura</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Produção e edição de vídeos personalizados para marcas e projetos únicos. Cada trabalho é pensado sob medida para comunicar, impactar e converter. Fale comigo no WhatsApp.">
+
+  <meta property="og:title" content="Produção e Edição de Vídeos Personalizada | Shura">
+  <meta property="og:description" content="Cada projeto é único e personalizado. Produção e edição de vídeos sob medida para marcas, criadores e empresas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://siteshuraman.netlify.app">
+  <meta property="og:image" content="https://siteshuraman.netlify.app/preview.jpg">
+
+  <link rel="icon" href="/favicon.png">
 
   <style>
     * {
@@ -35,8 +45,9 @@
     .overlay {
       position: fixed;
       inset: 0;
-      background: rgba(255, 255, 255, 0.45);
+      background: rgba(255, 255, 255, 0.35);
       z-index: 1;
+      pointer-events: none;
     }
 
     .content {
@@ -50,9 +61,20 @@
       text-align: center;
     }
 
+    .btn-info {
+      background: #ffffff;
+      color: #000000;
+      padding: 18px 34px;
+      border-radius: 999px;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
     .btn {
       background: #25d366;
-      color: #fff;
+      color: #ffffff;
       text-decoration: none;
       font-weight: 700;
       border-radius: 999px;
@@ -79,48 +101,38 @@
       transform: scale(1.06);
       box-shadow: 0 20px 42px rgba(0,0,0,0.35);
     }
-
-    @media (max-width: 768px) {
-      .btn {
-        font-size: 20px;
-        padding: 22px 36px;
-      }
-
-      .btn span {
-        font-size: 16px;
-      }
-    }
-
-.btn-info {
-  background: #ffffff;
-  color: #000000;
-  padding: 18px 34px;
-  border-radius: 999px;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 18px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
   </style>
 </head>
+
 <body>
+  <div class="bg">
+    <iframe
+      src="https://player.vimeo.com/video/1150136711?background=1&autopause=0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="overlay"></div>
 
   <div class="content">
-  <div>
+    <div>
+      <div class="btn-info">Cada projeto é único e personalizado...</div>
 
-    <div class="btn-info">
-      Cada projeto é único e personalizado...
+      <a class="btn" href="https://wa.me/5511992109965" target="_blank" rel="noopener">
+        Vamos conversar?
+        <span>Me chama no WhatsApp!</span>
+      </a>
     </div>
-
-    <a class="btn" href="https://wa.me/5511992109965" target="_blank">
-      Vamos conversar?
-      <span>Me chama no WhatsApp!</span>
-    </a>
-
   </div>
-</div>
 
+  <h1 style="position:absolute; left:-9999px;">
+    Produção e edição de vídeos personalizada para marcas e projetos criativos
+  </h1>
 
+  <p style="position:absolute; left:-9999px;">
+    Criação e edição de vídeos sob medida para empresas, profissionais e marcas que buscam identidade visual forte, comunicação estratégica e conteúdo de impacto.
+  </p>
 </body>
 </html>
+
