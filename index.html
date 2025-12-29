@@ -94,16 +94,17 @@
       display: block;
     }
 
-    /* TEXTO SOBRE A PÍLULA */
+    /* TEXTO SOBRE A PÍLULA (DESKTOP – do jeito que você aprovou) */
     .hero-text {
       position: absolute;
       left: 16%;
       top: 57%;
-      transform: translate(73px, -50%); /* X em px (controle fino) + centralização vertical */
+      transform: translate(73px, -50%);
       font-size: 9.5px;
       font-weight: 900;
       color: #000;
       white-space: nowrap;
+      text-align: left;
     }
 
     /* BOTÕES */
@@ -125,6 +126,7 @@
       font-size: 17.5px;
       box-shadow: 0 10px 22px rgba(0,0,0,0.35);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: inline-block;
     }
 
     .btn-alt:hover {
@@ -132,27 +134,40 @@
       box-shadow: 0 14px 30px rgba(0,0,0,0.55);
     }
 
-    /* MOBILE */
+    /* MOBILE (AJUSTADO PRA NÃO QUEBRAR) */
     @media (max-width: 768px) {
+      .wrap {
+        width: 92vw;
+      }
+
+      /* banner menor no celular */
       .hero {
-        transform: scale(1.25);
+        transform: scale(1.55);
+        margin-bottom: 12px;
       }
 
+      /* texto centralizado na pílula branca da arte */
       .hero-text {
-        font-size: 8.5px;
-        left: calc(12% + 20px);
-        top: calc(60% + 15px);
-        white-space: normal;
-        width: 65%;
+        left: 50%;
+        top: 58%;
+        transform: translate(-50%, -50%);
+        font-size: 9px;
+        white-space: nowrap;
+        text-align: center;
       }
 
+      /* botões menos “tijolo” */
       .btn-group {
-        transform: translate(-6px, 0px);
+        transform: translate(0px, 0px);
+        gap: 12px;
+        margin-top: 18px;
       }
 
       .btn-alt {
-        font-size: 16px;
-        padding: 13px 16px;
+        width: min(92vw, 360px);
+        margin: 0 auto;
+        font-size: 15px;
+        padding: 12px 14px;
       }
     }
   </style>
@@ -201,7 +216,7 @@
     </div>
   </div>
 
-  <!-- SEO invisível (não aparece na tela) -->
+  <!-- SEO invisível -->
   <h1 style="position:absolute; left:-9999px;">
     Produção e edição de vídeos personalizados para marcas e empresas
   </h1>
