@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Produção e Edição de Vídeos | Shura</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Produção e edição de vídeos personalizados para marcas e projetos únicos.">
 
   <link rel="icon" href="./favicon.png">
 
@@ -15,34 +13,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Lato', sans-serif;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Lato', sans-serif; }
+    html, body { width: 100%; height: 100%; }
 
-    html, body {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    /* ================= VIDEO FUNDO ================= */
+    /* FUNDO VÍDEO */
     .bg {
       position: fixed;
       inset: 0;
       z-index: 0;
       background: #000;
     }
-
     .bg iframe {
       width: 100%;
       height: 100%;
       border: 0;
     }
 
-    /* ================= OVERLAY ================= */
+    /* OVERLAY */
     .overlay {
       position: fixed;
       inset: 0;
@@ -51,7 +38,7 @@
       pointer-events: none;
     }
 
-    /* ================= CONTEÚDO ================= */
+    /* CONTEÚDO */
     .content {
       position: fixed;
       inset: 0;
@@ -68,24 +55,23 @@
       text-align: center;
     }
 
-    /* ================= BANNER (ARTE) ================= */
+    /* BANNER ARTE */
     .hero {
       position: relative;
       width: 100%;
       margin-bottom: 16px;
     }
-
     .hero img {
       width: 100%;
       height: auto;
       display: block;
     }
 
-    /* TEXTO EM CIMA DA PÍLULA DA ARTE */
+    /* TEXTO NA PÍLULA (dentro da arte) */
     .hero-text {
       position: absolute;
 
-      /* 🔧 AJUSTE FINO AQUI */
+      /* AJUSTE FINO */
       left: 14%;
       top: 58%;
 
@@ -97,7 +83,7 @@
       white-space: nowrap;
     }
 
-    /* ================= BOTÕES ================= */
+    /* BOTÕES */
     .btn-group {
       display: flex;
       flex-direction: column;
@@ -107,22 +93,21 @@
 
     .btn-alt {
       background: #25d366;
-      color: #ffffff;
+      color: #fff;
       text-decoration: none;
       font-weight: 700;
       border-radius: 999px;
       padding: 14px 26px;
       font-size: 16px;
       box-shadow: 0 10px 22px rgba(0,0,0,0.35);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform .2s ease, box-shadow .2s ease;
     }
-
     .btn-alt:hover {
       transform: scale(1.04);
       box-shadow: 0 14px 30px rgba(0,0,0,0.55);
     }
 
-    /* ================= MOBILE ================= */
+    /* MOBILE */
     @media (max-width: 768px) {
       .hero-text {
         font-size: 16px;
@@ -131,7 +116,6 @@
         white-space: normal;
         width: 62%;
       }
-
       .btn-alt {
         font-size: 15px;
         padding: 13px 22px;
@@ -142,10 +126,10 @@
 
 <body>
 
-  <!-- VIDEO FUNDO -->
+  <!-- VÍDEO FUNDO (VIMEO) -->
   <div class="bg">
     <iframe
-      src="https://player.vimeo.com/video/1150136711?background=1&autopause=0"
+      src="https://player.vimeo.com/video/1150136711?background=1&autoplay=1&muted=1&loop=1&autopause=0"
       allow="autoplay; fullscreen; picture-in-picture"
       allowfullscreen>
     </iframe>
@@ -153,35 +137,27 @@
 
   <div class="overlay"></div>
 
-  <!-- CONTEÚDO -->
   <div class="content">
     <div class="wrap">
 
-      <!-- BANNER -->
       <div class="hero">
         <img src="./shura.png" alt="Shura banner">
-        <div class="hero-text">
-          Cada projeto é único e personalizado...
-        </div>
+        <div class="hero-text">Cada projeto é único e personalizado...</div>
       </div>
 
-      <!-- BOTÕES -->
       <div class="btn-group">
-        <a class="btn-alt"
-           href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20grava%C3%A7%C3%A3o%20e%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeos%20comerciais%2Finstitucionais..."
-           target="_blank">
+        <a class="btn-alt" target="_blank"
+          href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20grava%C3%A7%C3%A3o%20e%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeos%20comerciais%2Finstitucionais...">
           Gravar e editar vídeo comercial/institucional
         </a>
 
-        <a class="btn-alt"
-           href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeos%20comerciais%2Finstitucionais..."
-           target="_blank">
+        <a class="btn-alt" target="_blank"
+          href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeos%20comerciais%2Finstitucionais...">
           Editar vídeo comercial/institucional
         </a>
 
-        <a class="btn-alt"
-           href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20grava%C3%A7%C3%A3o%20e%2Fou%20edi%C3%A7%C3%A3o%20de%20campanhas%20personalizadas..."
-           target="_blank">
+        <a class="btn-alt" target="_blank"
+          href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20grava%C3%A7%C3%A3o%20e%2Fou%20edi%C3%A7%C3%A3o%20de%20campanhas%20personalizadas...">
           Gravar e/ou editar uma campanha
         </a>
       </div>
