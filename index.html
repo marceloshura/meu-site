@@ -70,7 +70,7 @@
       position: relative;
       width: 100%;
       margin-bottom: 18px;
-      transform: scale(2.8); /* +40% */
+      transform: scale(2.8);
       transform-origin: center;
     }
 
@@ -80,14 +80,14 @@
       display: block;
     }
 
-    /* TEXTO SOBRE A PÍLULA */
+    /* TEXTO SOBRE A PÍLULA (ARTE) */
     .hero-text {
       position: absolute;
-      left: calc(14% + 10px);   /* 15px para a esquerda */
-      top: calc(58% - 05px);    /* desce 20px */
+      left: calc(14% + 10px);
+      top: calc(58% - 5px);
       transform: translateY(-50%);
 
-      font-size: 15px;          /* -30% aprox */
+      font-size: 9.5px; /* -35% */
       font-weight: 900;
       color: #000;
       text-align: left;
@@ -100,6 +100,8 @@
       flex-direction: column;
       gap: 14px;
       margin-top: 22px;
+
+      transform: translateX(-10px); /* 10px para a esquerda */
     }
 
     .btn-alt {
@@ -109,8 +111,8 @@
       font-weight: 700;
       border-radius: 999px;
 
-      padding: 14px 22px;      /* menos largura horizontal */
-      font-size: 17.5px;       /* +9% */
+      padding: 14px 18px; /* mais estreito */
+      font-size: 17.5px;
 
       box-shadow: 0 10px 22px rgba(0,0,0,0.35);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -128,16 +130,20 @@
       }
 
       .hero-text {
-        font-size: 14px;
+        font-size: 8.5px;
         left: calc(12% - 15px);
         top: calc(60% + 20px);
         white-space: normal;
         width: 65%;
       }
 
+      .btn-group {
+        transform: translateX(-6px);
+      }
+
       .btn-alt {
         font-size: 16px;
-        padding: 13px 20px;
+        padding: 13px 16px;
       }
     }
   </style>
@@ -188,5 +194,3 @@
 
 </body>
 </html>
-
-
