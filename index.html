@@ -10,11 +10,10 @@
   <meta property="og:title" content="Produção e Edição de Vídeos Personalizada | Shura">
   <meta property="og:description" content="Cada projeto é único e personalizado. Produção e edição de vídeos sob medida para marcas, criadores e empresas.">
   <meta property="og:type" content="website">
-  <!-- TROQUE DEPOIS pelo link do seu GitHub Pages -->
-  <meta property="og:url" content="https://SEUUSUARIO.github.io/NOMEDOREPO/">
-  <meta property="og:image" content="https://SEUUSUARIO.github.io/NOMEDOREPO/preview.png">
+  <meta property="og:url" content="https://marceloshura.github.io/meu-site/">
+  <meta property="og:image" content="https://marceloshura.github.io/meu-site/preview.png">
 
-  <link rel="icon" href="favicon.png">
+  <link rel="icon" href="./favicon.png">
 
   <!-- GOOGLE FONT: LATO -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,42 +69,43 @@
       text-align: center;
     }
 
-    /* BLOCO HERO (IMAGEM + TEXTO) */
+    /* HERO (IMAGEM FUNDO + TEXTO) */
     .hero-banner {
-  width: 520px;
-  max-width: 92vw;
-  height: 120px;
-  margin: 0 auto 26px auto;
+      width: 520px;
+      max-width: 92vw;
+      height: 120px;
+      margin: 0 auto 26px auto;
 
-  display: flex;
-  align-items: center;
+      display: flex;
+      align-items: center;
 
-  color: #000;
-  font-size: 22px;
-  font-weight: 900;
-  text-align: left;
-  padding-left: 32px;
-  padding-right: 32px;
+      color: #000;
+      font-size: 22px;
+      font-weight: 900;
+      text-align: left;
+      padding: 0 32px;
 
-  background-color: rgba(255,255,255,0.25);
-  border-radius: 18px;
+      background-color: rgba(255,255,255,0.25);
+      border-radius: 18px;
 
-  background-image: url("./shura.png");
-  background-repeat: no-repeat;
-  background-size: 155%;
-  background-position: 50% 50%;
-}
+      background-image: url("./shura.png");
+      background-repeat: no-repeat;
 
-@media (max-width: 768px) {
-  .hero-banner {
-    height: 350px;
-    font-size: 350px;
+      /* ✅ enquadramento mais bonito */
+      background-size: 170%;
+      background-position: 78% 38%;
+    }
 
-    background-size: 320%;
-    background-position: 68% 48%;
-  }
-}
+    @media (max-width: 768px) {
+      .hero-banner {
+        height: 96px;
+        font-size: 18px;
+        padding: 0 22px;
 
+        background-size: 230%;
+        background-position: 80% 35%;
+      }
+    }
 
     /* BOTÕES */
     .btn-group {
@@ -193,6 +193,3 @@
 
 </body>
 </html>
-
-
-
