@@ -2,16 +2,10 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Produção e Edição de Vídeos Personalizada | Shura</title>
+  <title>Produção e Edição de Vídeos | Shura</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Produção e edição de vídeos personalizados para marcas e projetos únicos. Cada trabalho é pensado sob medida para comunicar, impactar e converter.">
-
-  <meta property="og:title" content="Produção e Edição de Vídeos Personalizada | Shura">
-  <meta property="og:description" content="Cada projeto é único e personalizado. Produção e edição de vídeos sob medida para marcas, criadores e empresas.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://marceloshura.github.io/meu-site/">
-  <meta property="og:image" content="https://marceloshura.github.io/meu-site/preview.png">
+  <meta name="description" content="Produção e edição de vídeos personalizados para marcas e projetos únicos.">
 
   <link rel="icon" href="./favicon.png">
 
@@ -21,17 +15,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Lato', Arial, Helvetica, sans-serif; }
-    html, body { width: 100%; height: 100%; overflow: hidden; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Lato', sans-serif;
+    }
 
-    /* FUNDO (VÍDEO) */
-    .bg { position: fixed; inset: 0; z-index: 0; background: #000; }
-    .bg iframe { width: 100%; height: 100%; border: 0; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
 
-    /* OVERLAY */
-    .overlay { position: fixed; inset: 0; background: rgba(255,255,255,0.55); z-index: 1; pointer-events: none; }
+    /* ================= VIDEO FUNDO ================= */
+    .bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background: #000;
+    }
 
-    /* CONTEÚDO CENTRAL */
+    .bg iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* ================= OVERLAY ================= */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(255,255,255,0.55);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* ================= CONTEÚDO ================= */
     .content {
       position: fixed;
       inset: 0;
@@ -40,20 +60,19 @@
       align-items: center;
       justify-content: center;
       padding: 24px;
-      text-align: center;
     }
 
-    /* WRAPPER */
     .wrap {
       width: 560px;
       max-width: 92vw;
+      text-align: center;
     }
 
-    /* BANNER (IMAGEM) */
+    /* ================= BANNER (ARTE) ================= */
     .hero {
       position: relative;
       width: 100%;
-      margin: 0 auto 18px auto;
+      margin-bottom: 16px;
     }
 
     .hero img {
@@ -62,11 +81,11 @@
       display: block;
     }
 
-    /* TEXTO EM CIMA DA PÍLULA (QUE JÁ EXISTE NA ARTE) */
+    /* TEXTO EM CIMA DA PÍLULA DA ARTE */
     .hero-text {
       position: absolute;
 
-      /* ✅ Ajuste fino aqui (não mexe no resto) */
+      /* 🔧 AJUSTE FINO AQUI */
       left: 14%;
       top: 58%;
 
@@ -78,12 +97,12 @@
       white-space: nowrap;
     }
 
-    /* BOTÕES */
+    /* ================= BOTÕES ================= */
     .btn-group {
       display: flex;
       flex-direction: column;
       gap: 14px;
-      margin-top: 12px;
+      margin-top: 10px;
     }
 
     .btn-alt {
@@ -103,10 +122,8 @@
       box-shadow: 0 14px 30px rgba(0,0,0,0.55);
     }
 
-    /* MOBILE */
+    /* ================= MOBILE ================= */
     @media (max-width: 768px) {
-      .wrap { width: 92vw; }
-
       .hero-text {
         font-size: 16px;
         left: 12%;
@@ -125,4 +142,52 @@
 
 <body>
 
+  <!-- VIDEO FUNDO -->
   <div class="bg">
+    <iframe
+      src="https://player.vimeo.com/video/1150136711?background=1&autopause=0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="overlay"></div>
+
+  <!-- CONTEÚDO -->
+  <div class="content">
+    <div class="wrap">
+
+      <!-- BANNER -->
+      <div class="hero">
+        <img src="./shura.png" alt="Shura banner">
+        <div class="hero-text">
+          Cada projeto é único e personalizado...
+        </div>
+      </div>
+
+      <!-- BOTÕES -->
+      <div class="btn-group">
+        <a class="btn-alt"
+           href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20grava%C3%A7%C3%A3o%20e%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeos%20comerciais%2Finstitucionais..."
+           target="_blank">
+          Gravar e editar vídeo comercial/institucional
+        </a>
+
+        <a class="btn-alt"
+           href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeos%20comerciais%2Finstitucionais..."
+           target="_blank">
+          Editar vídeo comercial/institucional
+        </a>
+
+        <a class="btn-alt"
+           href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20grava%C3%A7%C3%A3o%20e%2Fou%20edi%C3%A7%C3%A3o%20de%20campanhas%20personalizadas..."
+           target="_blank">
+          Gravar e/ou editar uma campanha
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
