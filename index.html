@@ -71,40 +71,40 @@
 
     /* HERO: SOMENTE IMAGEM + TEXTO (SEM PÍLULA) */
     .hero-banner {
-      width: 520px;
-      max-width: 92vw;
-      height: 120px;
-      margin: 0 auto 26px auto;
+  width: 520px;
+  max-width: 92vw;
+  height: 120px;
+  margin: 0 auto 26px auto;
 
-      display: flex;
-      align-items: center;
+  display: flex;
+  align-items: center;
 
-      color: #000;
-      font-size: 22px;
-      font-weight: 900;
-      text-align: left;
-      padding: 0 32px;
+  color: #000;
+  font-size: 22px;
+  font-weight: 900;
+  text-align: left;
+  padding: 0 32px;
 
-      background-image: url("./shura.png");
-      background-repeat: no-repeat;
-      background-size: 170%;
-      background-position: 78% 38%;
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 
-      /* ✅ SEM FUNDO / SEM BORDA ARREDONDADA */
-      background-color: transparent;
-      border-radius: 0;
-    }
+  background-image: url("./shura.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: 170% !important;
+  background-position: 78% 38% !important;
+}
 
-    @media (max-width: 768px) {
-      .hero-banner {
-        height: 96px;
-        font-size: 18px;
-        padding: 0 22px;
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 96px;
+    font-size: 18px;
+    padding: 0 22px;
 
-        background-size: 230%;
-        background-position: 80% 35%;
-      }
-    }
+    background-size: 230% !important;
+    background-position: 80% 35% !important;
+  }
+}
 
     /* BOTÕES */
     .btn-group {
@@ -191,3 +191,4 @@
 
 </body>
 </html>
+
