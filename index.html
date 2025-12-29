@@ -70,41 +70,67 @@
     }
 
     /* HERO: SOMENTE IMAGEM + TEXTO (SEM PÍLULA) */
-    .hero-banner {
+    .hero-banner{
   width: 520px;
   max-width: 92vw;
   height: 120px;
   margin: 0 auto 26px auto;
+  position: relative;
+}
 
-  display: flex;
-  align-items: center;
+/* cabeça “solta” e bem grande */
+.hero-face{
+  position: absolute;
+  right: -10px;
+  top: -22px;
+
+  width: 190px;
+  height: 190px;
+
+  object-fit: cover;
+  object-position: 65% 30%; /* ajuste fino aqui */
+
+  pointer-events: none;
+  user-select: none;
+}
+
+/* texto por cima, sem caixa nenhuma */
+.hero-text{
+  position: absolute;
+  left: 0;
+  top: 34px;
 
   color: #000;
   font-size: 22px;
   font-weight: 900;
+  line-height: 1.1;
   text-align: left;
-  padding: 0 32px;
 
-  background: transparent !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-
-  background-image: url("./shura.png") !important;
-  background-repeat: no-repeat !important;
-  background-size: 170% !important;
-  background-position: 78% 38% !important;
+  padding-right: 150px; /* espaço pra cabeça não invadir */
 }
 
-@media (max-width: 768px) {
-  .hero-banner {
+/* mobile */
+@media (max-width: 768px){
+  .hero-banner{
     height: 96px;
-    font-size: 18px;
-    padding: 0 22px;
+    margin-bottom: 22px;
+  }
 
-    background-size: 230% !important;
-    background-position: 80% 35% !important;
+  .hero-face{
+    width: 150px;
+    height: 150px;
+    right: -8px;
+    top: -18px;
+    object-position: 65% 30%;
+  }
+
+  .hero-text{
+    top: 28px;
+    font-size: 18px;
+    padding-right: 120px;
   }
 }
+
 
     /* BOTÕES */
     .btn-group {
@@ -155,8 +181,9 @@
     <div>
 
       <div class="hero-banner">
-        Cada projeto é único e personalizado...
-      </div>
+  <img class="hero-face" src="./shura.png" alt="Shura" />
+  <div class="hero-text">Cada projeto é único e personalizado...</div>
+</div>
 
       <div class="btn-group">
         <a class="btn-alt"
@@ -191,4 +218,5 @@
 
 </body>
 </html>
+
 
