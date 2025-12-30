@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <title>Produção e Edição de Vídeos | Shura</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Produção e edição de vídeos personalizados para marcas, empresas e campanhas. Cada projeto é único, pensado sob medida para comunicar, impactar e converter.">
+
+  <!-- Open Graph (Facebook / WhatsApp) -->
+  <meta property="og:title" content="Produção e Edição de Vídeos Personalizada | Shura">
+  <meta property="og:description" content="Cada projeto é único e personalizado. Vídeos comerciais, institucionais e campanhas sob medida.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://marceloshura.github.io/meu-site/">
+  <meta property="og:image" content="https://marceloshura.github.io/meu-site/preview.png">
 
   <link rel="icon" href="./favicon.png">
 
@@ -70,7 +79,7 @@
       position: relative;
       width: 100%;
       margin-bottom: 18px;
-      transform: scale(2.8);
+      transform: scale(2.8); /* pílula grande (como você quer) */
       transform-origin: center;
     }
 
@@ -86,7 +95,8 @@
       left: 16%;
       top: 57%;
       transform: translate(73px, -50%);
-      font-size: 9.5px;
+
+      font-size: 9.5px; /* desktop OK */
       font-weight: 900;
       color: #000;
       white-space: nowrap;
@@ -110,23 +120,22 @@
       padding: 14px 14px;
       font-size: 17.5px;
       box-shadow: 0 10px 22px rgba(0,0,0,0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-alt:hover {
+      transform: scale(1.04);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.55);
     }
 
     /* MOBILE */
     @media (max-width: 768px) {
-
       .hero {
-        transform: scale(1.25);
+        transform: scale(1.25); /* mantém pílula grande no mobile */
       }
 
-      /* 🔥 AQUI ESTÁ A CORREÇÃO */
       .hero-text {
-        font-size: 6.8px; /* ~20% menor */
-        left: 16%;
-        top: 58%;
-        transform: translate(73px, -50%);
-        white-space: normal;
-        width: 62%;
+        font-size: 7.5px; /* ↓ ~20% — ajuste correto */
       }
 
       .btn-group {
@@ -166,17 +175,17 @@
 
       <div class="btn-group">
         <a class="btn-alt" target="_blank"
-          href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20grava%C3%A7%C3%A3o%20e%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeos%20comerciais%2Finstitucionais...">
+          href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20grava%C3%A7%C3%A3o%20e%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeos%20comerciais%20ou%20institucionais.">
           Gravar e editar vídeo comercial/institucional
         </a>
 
         <a class="btn-alt" target="_blank"
-          href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeos%20comerciais%2Finstitucionais...">
+          href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeos%20comerciais%20ou%20institucionais.">
           Editar vídeo comercial/institucional
         </a>
 
         <a class="btn-alt" target="_blank"
-          href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20grava%C3%A7%C3%A3o%20e%2Fou%20edi%C3%A7%C3%A3o%20de%20campanhas%20personalizadas...">
+          href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20grava%C3%A7%C3%A3o%20ou%20edi%C3%A7%C3%A3o%20de%20campanhas%20personalizadas.">
           Gravar e/ou editar uma campanha
         </a>
       </div>
