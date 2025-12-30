@@ -6,18 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <meta name="description" content="Produção e edição de vídeos personalizados para marcas, empresas e criadores. Cada projeto é único, pensado sob medida para comunicar, impactar e converter.">
-  <meta name="keywords" content="produção de vídeo, edição de vídeo, vídeos institucionais, vídeos comerciais, filmmaker, editor de vídeo, marketing audiovisual, vídeo personalizado, São Paulo">
+  <meta name="description" content="Produção e edição de vídeos personalizados para marcas, empresas e campanhas. Cada projeto é único e pensado sob medida.">
+  <meta name="keywords" content="produção de vídeo, edição de vídeo, vídeo institucional, vídeo comercial, filmmaker, editor de vídeo, marketing audiovisual">
   <meta name="author" content="Shura">
 
-  <!-- OPEN GRAPH (WhatsApp / Instagram / Facebook) -->
+  <!-- OPEN GRAPH -->
   <meta property="og:title" content="Produção e Edição de Vídeos | Shura">
-  <meta property="og:description" content="Cada projeto é único e personalizado. Produção e edição de vídeos sob medida para marcas e campanhas.">
+  <meta property="og:description" content="Cada projeto é único e personalizado. Produção e edição de vídeos sob medida.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://marceloshura.github.io/meu-site/">
   <meta property="og:image" content="https://marceloshura.github.io/meu-site/preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
 
   <link rel="icon" href="./favicon.png">
 
@@ -84,7 +82,7 @@
       position: relative;
       width: 100%;
       margin-bottom: 18px;
-      transform: scale(2.8);
+      transform: scale(3.5); /* +25% */
       transform-origin: center;
     }
 
@@ -94,17 +92,17 @@
       display: block;
     }
 
-    /* TEXTO SOBRE A PÍLULA (DESKTOP – do jeito que você aprovou) */
+    /* TEXTO CENTRALIZADO NA PÍLULA */
     .hero-text {
       position: absolute;
-      left: 16%;
+      left: 50%;
       top: 57%;
-      transform: translate(73px, -50%);
+      transform: translate(-50%, -50%);
       font-size: 9.5px;
       font-weight: 900;
       color: #000;
       white-space: nowrap;
-      text-align: left;
+      text-align: center;
     }
 
     /* BOTÕES */
@@ -126,7 +124,6 @@
       font-size: 17.5px;
       box-shadow: 0 10px 22px rgba(0,0,0,0.35);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
-      display: inline-block;
     }
 
     .btn-alt:hover {
@@ -134,33 +131,19 @@
       box-shadow: 0 14px 30px rgba(0,0,0,0.55);
     }
 
-    /* MOBILE (AJUSTADO PRA NÃO QUEBRAR) */
+    /* MOBILE */
     @media (max-width: 768px) {
-      .wrap {
-        width: 92vw;
-      }
-
-      /* banner menor no celular */
       .hero {
-        transform: scale(1.55);
-        margin-bottom: 12px;
+        transform: scale(1.9);
       }
 
-      /* texto centralizado na pílula branca da arte */
       .hero-text {
-        left: 50%;
-        top: 58%;
-        transform: translate(-50%, -50%);
         font-size: 9px;
-        white-space: nowrap;
-        text-align: center;
+        top: 58%;
       }
 
-      /* botões menos “tijolo” */
       .btn-group {
         transform: translate(0px, 0px);
-        gap: 12px;
-        margin-top: 18px;
       }
 
       .btn-alt {
@@ -197,34 +180,24 @@
       </div>
 
       <div class="btn-group">
-        <a class="btn-alt" target="_blank" rel="noopener"
-          href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20grava%C3%A7%C3%A3o%20e%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeos%20comerciais%2Finstitucionais...">
+        <a class="btn-alt" target="_blank"
+          href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20gostaria%20de%20informações%20sobre%20produção%20e%20edição%20de%20vídeos.">
           Gravar e editar vídeo comercial/institucional
         </a>
 
-        <a class="btn-alt" target="_blank" rel="noopener"
-          href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeos%20comerciais%2Finstitucionais...">
+        <a class="btn-alt" target="_blank"
+          href="https://wa.me/5511921432425?text=Olá,%20gostaria%20de%20informações%20sobre%20edição%20de%20vídeos.">
           Editar vídeo comercial/institucional
         </a>
 
-        <a class="btn-alt" target="_blank" rel="noopener"
-          href="https://wa.me/5511921432425?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20grava%C3%A7%C3%A3o%20e%2Fou%20edi%C3%A7%C3%A3o%20de%20campanhas%20personalizadas...">
+        <a class="btn-alt" target="_blank"
+          href="https://wa.me/5511921432425?text=Olá,%20gostaria%20de%20informações%20sobre%20campanhas%20audiovisuais.">
           Gravar e/ou editar uma campanha
         </a>
       </div>
 
     </div>
   </div>
-
-  <!-- SEO invisível -->
-  <h1 style="position:absolute; left:-9999px;">
-    Produção e edição de vídeos personalizados para marcas e empresas
-  </h1>
-
-  <p style="position:absolute; left:-9999px;">
-    Criação de vídeos institucionais, comerciais e campanhas audiovisuais sob medida.
-    Atendimento personalizado, edição profissional e identidade visual forte.
-  </p>
 
 </body>
 </html>
